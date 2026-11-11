@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whi so sirius?</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <h1>ESP web server made in peru</h1>
+    <!--llos leds-->
+    <h3>salida - GPIO XX</h3>
+    <label class="switch">
+        <input type="checkbox" onchange="toggleCheckbox(this)" id="XX">
+        <span class="slider"></span>
+    </label>
+    <h3>sensor PIR</h3>
+    <label class="switch">
+        <input type="checkbox" onchange="toggleCheckbox(this)" id="XX">
+        <span class="slider"></span>
+    </label>
+
+ <h4>boton si</h4>
+ <div id ="indicador" class = "indicador"></div>
+ 
+
+ <div style="text-align:center;padding:1em 0;">
+    <h3><a target="_blank" style="text-decoration:none;line-height:1.7;" 	href="https://www.zeitverschiebung.net/es/city/3436043">
+	<span style="color:rgb(51, 156, 226);">Hora actual en</span>
+	<br />Berazategui, Argentina</a></h3>
+	<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FArgentina%2FBuenos_Aires" width="100%" height="115" frameborder="0" seamless></iframe>
+  
+ <h4>historial (no el de Google)</h4>
+
+<button id="guardarHora">boton test</button>
+  <ul id="listaHorarios"></ul>
+  <script src="script.js"></script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+html{
+    display: inline-block;
+    text-align: center;
+}
+
+body{
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 68px;
+}
+
+.switch input{
+    display: none;
+}
+
+.slider{
+    position: absolute;
+    inset: 0;
+    background-color: rgb(212, 21, 21);
+    border-radius: 6px;
+}
+#fecha {
+  color: red;
+}
+.slider:before{
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;    
+    left: 8px;
+    bottom: 8px;
+    background-color: rgb(73, 90, 121);
+    transition: 0.4s;
+    border-radius: 3px;
+}
+
+input:checked + .slider{
+    background-color: rgb(16, 233, 8);
+}
+
+input:checked + .slider:before{
+    transform: translateX(52px);
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+
+.indicador {
+    width: 68px;
+    height: 68px;
+    margin: 0px auto;
+    border-radius: 6px;
+    background-color:rgb(64, 92, 83);
+    transition: background-color 0.2s;
+}
+
+.indicador.activo{
+    background-color:#b30000;
+
+}
